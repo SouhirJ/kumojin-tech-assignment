@@ -7,4 +7,5 @@ RUN npm run build --prod
 
 # stage 2
 FROM nginx:alpine
+COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=node /app/dist/eventsmanager /usr/share/nginx/html
