@@ -1,0 +1,18 @@
+<div class="container" style="margin: 1em;">
+    <h3> Events</h3>
+<ul class="list-group">
+    <ng-container *ngFor="let event of events">
+      <li class="list-group-item">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{ event.name }}</h5>
+          <div class="badge-container">
+            <span class="badge bg-primary rounded-pill">Start Date : {{ event.startDate  | date:'fullTime'}}</span>
+            <span class="badge bg-primary rounded-pill">End Date : {{ event.endDate  | date:'fullTime' }}</span>
+          </div>
+        </div>
+        <p class="mb-1">{{ event.description }}</p>
+      </li>
+    </ng-container>
+  </ul>
+  </div>
+  

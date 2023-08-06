@@ -1,0 +1,7 @@
+.badge-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .badge-container .badge {
+    margin-bottom: 5px;
+  }  

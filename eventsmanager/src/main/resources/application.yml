@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      username: Kumojin
+      password: Kumojin
+      host: localhost
+      port: 27017
+      database: kumojin-db
+      authentication-database: Kumojin
+      uri: mongodb://Kumojin:Kumojin@localhost:27017
